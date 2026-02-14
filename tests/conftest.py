@@ -4,7 +4,7 @@ from selenium.webdriver.edge.service import Service
 from selenium.webdriver.edge.options import Options
 
 
-@pytest.fixturegit
+@pytest.fixture
 def setup():
     options = Options()
     options.add_argument("--headless=True")
