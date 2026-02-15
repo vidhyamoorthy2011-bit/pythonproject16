@@ -13,7 +13,8 @@ def setup():
     options.add_argument("--window-size=1920,1080")
 
 
-    service = Service()
+    service = Service(executable_path=r"C:\SeleniumDrivers\chromedriver.exe")
+
 
     driver = webdriver.Chrome(service=service, options=options)
     driver.implicitly_wait(10)
