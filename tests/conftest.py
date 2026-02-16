@@ -16,7 +16,7 @@ def setup():
     service = Service(executable_path=r"C:\SeleniumDrivers\chromedriver.exe")
 
 
-    driver = webdriver.Chrome(service=service, options=options)
+    driver = webdriver.Chrome(options=options)
     driver.implicitly_wait(10)
 
     yield driver
